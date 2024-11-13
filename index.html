@@ -8,24 +8,42 @@
 </head>
 <body>
       <!-- Header Section with Hamburger Menu -->
-      <header class="bg-white shadow-lg p-4 md:p-6">
+      <header class="bg-white shadow-lg p-4 md:p-6 items-center">
         <div class="flex justify-between items-center">
             <!-- Logo and Brand Name -->
             <div class="flex items-center">
-                <img src="c4u full logo_2022 1 (2).png" alt="Logo" class="h-8 w-20 mr-2">
+                <img src="c4u full logo_2022 1 (2).png" alt="Logo" class="h-10 w-25 mr-2">
                
             </div>
             
-            <!-- Navigation Links (Hidden on Small Screens) -->
+            <!-- Navigation Links (Hidden on big Screens) -->
             <nav class="hidden md:flex space-x-6 items-center">
                 <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:font-extrabold">Home</a>
-                <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:underline">About Us</a>
-                <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:underline">Upskill</a>
-                <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:underline">Contact Us</a>
-                <a href="#" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:black00 transition duration-200">
+                <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:font-extrabold">About Us</a>
+                <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:font-extrabold">Upskill</a>
+                <a href="#" class="text-black hover:text-red-700 transition duration-200 hover:font-extrabold">Contact Us</a>
+                <a href="#" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition duration-200">
                     Register Interest
                 </a>
             </nav>
+              <!-- Hamburger Button (Only Visible on Small Screens) -->
+              <button onclick="toggleMenu()" class="md:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+         <!-- Mobile Menu (Hidden by Default) -->
+         <div id="mobile-menu" class="hidden md:hidden mt-4  flex-col space-y-2">
+            <a href="#" class="text-blue-950 hover:text-red-600 transition duration-200 hover:underline">Home</a>
+            <a href="#" class="text-blue-950 hover:text-red-600 transition duration-200 hover:underline">About Us</a>
+            <a href="#" class="text-blue-950 hover:text-red-600 transition duration-200 hover:underline">Upskill</a>
+            <a href="#" class="text-blue-950 hover:text-red-600 transition duration-200 hover:underline">Contact Us</a>
+            <a href="#" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition duration-200">
+                Register Interest
+            </a>
+        </div>
+    </header>
     
     
 </body>
